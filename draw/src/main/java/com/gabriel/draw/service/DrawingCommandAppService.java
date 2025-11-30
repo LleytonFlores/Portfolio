@@ -1,7 +1,6 @@
 package com.gabriel.draw.service;
 
 import com.gabriel.draw.command.AddShapeCommand;
-import com.gabriel.draw.command.SetDrawModeCommand;
 import com.gabriel.drawfx.DrawMode;
 import com.gabriel.drawfx.ShapeMode;
 import com.gabriel.drawfx.command.Command;
@@ -35,7 +34,7 @@ public class DrawingCommandAppService implements AppService {
 
     @Override
     public void undo() {
-        CommandService.undo();;
+        CommandService.undo();
     }
 
     @Override
@@ -60,8 +59,7 @@ public class DrawingCommandAppService implements AppService {
 
     @Override
     public void setDrawMode(DrawMode drawMode) {
-        Command command = new SetDrawModeCommand(appService, drawMode);
-        CommandService.ExecuteCommand(command);
+        appService.setDrawMode(drawMode);
     }
 
     @Override
@@ -86,7 +84,17 @@ public class DrawingCommandAppService implements AppService {
 
     @Override
     public void move(Shape shape, Point start, Point end) {
-        appService.move(shape,start, end);
+        appService.move(shape, start, end);
+    }
+
+    @Override
+    public void move(Point start, Point end) {
+        appService.move(start, end);
+    }
+
+    @Override
+    public void scale(Point start, Point end) {
+        appService.scale(start, end);
     }
 
     @Override
@@ -96,7 +104,7 @@ public class DrawingCommandAppService implements AppService {
 
     @Override
     public void scale(Shape shape, Point end) {
-        appService.scale(shape,end);
+        appService.scale(shape, end);
     }
 
     @Override
@@ -141,6 +149,11 @@ public class DrawingCommandAppService implements AppService {
     }
 
     @Override
+    public void search(Point p, boolean single) {
+        appService.search(p, single);
+    }
+
+    @Override
     public void open(String filename) {
         appService.open(filename);
     }
@@ -148,17 +161,12 @@ public class DrawingCommandAppService implements AppService {
 
     @Override
     public void save() {
-        appService.save();;
+        appService.save();
     }
 
     @Override
-    public void saveas(String filename) {
-        appService.saveas(filename);
-    }
-
-    @Override
-    public void newDrawing() {
-        appService.newDrawing();
+    public String getFileName() {
+        return appService.getFileName();
     }
 
     @Override
@@ -179,5 +187,180 @@ public class DrawingCommandAppService implements AppService {
     @Override
     public List<Shape> getSelectedShapes() {
         return appService.getSelectedShapes();
+    }
+
+    @Override
+    public void clearSelections(){
+        appService.clearSelections();
+    }
+
+    @Override
+    public void setThickness(int thickness) {
+        appService.setThickness(thickness);
+    }
+
+    @Override
+    public int getThickness() {
+        return appService.getThickness();
+    }
+
+    @Override
+    public void setXLocation(int xLocation) {
+        appService.setXLocation(xLocation);
+    }
+
+    @Override
+    public int getXLocation() {
+        return appService.getXLocation();
+    }
+
+    @Override
+    public void setYLocation(int yLocation) {
+        appService.setYLocation(yLocation);
+    }
+
+    @Override
+    public int getYLocation() {
+        return appService.getYLocation();
+    }
+
+    @Override
+    public void setWidth(int width) {
+        appService.setWidth(width);
+    }
+
+    @Override
+    public int getWidth() {
+        return appService.getWidth();
+    }
+
+    @Override
+    public void setHeight(int height) {
+        appService.setHeight(height);
+    }
+
+    @Override
+    public int getHeight() {
+        return appService.getHeight();
+    }
+
+    @Override
+    public void setImageFilename(String imageFilename) {
+        appService.setImageFilename(imageFilename);
+    }
+
+    @Override
+    public String getImageFilename() {
+        return appService.getImageFilename();
+    }
+
+    @Override
+    public void setText(String text) {
+        appService.setText(text);
+    }
+
+    @Override
+    public void setFontSize(int fontSize) {
+        appService.setFontSize(fontSize);
+    }
+
+    @Override
+    public Color getStartColor() {
+        return appService.getStartColor();
+    }
+
+    @Override
+    public void setStartColor(Color color) {
+        appService.setStartColor(color);
+    }
+
+    @Override
+    public Color getEndColor() {
+        return appService.getEndColor();
+    }
+
+    @Override
+    public void setEndColor(Color color) {
+        appService.setEndColor(color);
+    }
+
+    @Override
+    public boolean isGradient() {
+        return appService.isGradient();
+    }
+
+    @Override
+    public void setIsGradient(boolean yes) {
+        appService.setIsGradient(yes);
+    }
+
+    @Override
+    public boolean isVisible() {
+        return appService.isVisible();
+    }
+
+    @Override
+    public void setIsVisible(boolean yes) {
+        appService.setIsVisible(yes);
+    }
+
+    @Override
+    public void delete() {
+        appService.delete();
+    }
+
+    @Override
+    public void setStartX(int startx) {
+        appService.setStartX(startx);
+    }
+
+    @Override
+    public int getStartX() {
+        return appService.getStartX();
+    }
+
+    @Override
+    public void setStarty(int starty) {
+        appService.setStarty(starty);
+    }
+
+    @Override
+    public int getStarty() {
+        return appService.getStarty();
+    }
+
+    @Override
+    public void setEndx(int endx) {
+        appService.setEndx(endx);
+    }
+
+    @Override
+    public int getEndx() {
+        return appService.getEndx();
+    }
+
+    @Override
+    public void setEndy(int endy) {
+        appService.setEndy(endy);
+    }
+
+    @Override
+    public int getEndy() {
+        return appService.getEndy();
+    }
+
+    @Override
+    public String getText() {
+        return appService.getText();
+    }
+
+    @Override
+    public Font getFont() {
+        return appService.getFont();
+    }
+
+    @Override
+    public void setFont(Font font) {
+        appService.setFont(font);
     }
 }
