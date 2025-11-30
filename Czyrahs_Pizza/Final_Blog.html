@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs & News | Czyrah's Pizza</title>
+
+    <!-- Bootstrap & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+            background: #f7e8a3;
+            background-image: url("LayerPizzaLeft.png"), url("LayerPizzaRight.png");
+            background-position: 50px 11px, 920px 11px;
+            background-size: 300px, 300px, cover;
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-attachment: fixed;
+            color: #3e2723;
+        }
+
+        /* Heading */
+        .main-heading {
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            color: #d84315;
+            margin-top: 100px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Cheese Border for Cards */
+        .card {
+            border: 15px solid transparent;
+            border-image-source: url('CheeseBorder.avif');
+            border-image-slice: 40;
+            border-image-repeat: round;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover .card-img-top {
+            transform: scale(1.1);
+        }
+
+        /* Description on Hover */
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 15px;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card:hover .description {
+            opacity: 1;
+            transform: translateY(0);
+        }
+		.social-media {
+            text-align: center;
+            margin-top: 20px;
+          }
+          .social-media a {
+            color: #C7A925;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 2rem;
+          }
+          .social-media a:hover {
+            color: #ffffff;
+          }
+          .footer {
+            background-color: #558957;
+            color: white;
+            padding: 40px 0;
+            margin-top: 40px;
+          }
+          .footer a {
+            color: #C7A925;
+            text-decoration: none;
+          }
+          .footer a:hover {
+            text-decoration: underline;
+          }
+          .footer strong {
+            font-weight: bold;
+          }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #558957;">
+    <div class="container">
+        <a href="Final_Menu.html" class="navbar-brand mb-0 h1">
+            <img src="Logo.png" width="50px">
+            Czyrah's Pizza
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Final_AboutUs.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Final_Menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a href="Final_Contact.html" class="dropdown-item">Terms & Conditions</a></li>
+                        <li><a href="Final_FAQ.html" class="dropdown-item">FAQs</a></li>
+                        <li><a href="Final_Contact.html" class="dropdown-item">Contacts</a></li>
+                        <li><a href="Final_Blog.html" class="dropdown-item">Blogs</a></li>
+                        <li><a href="Final_Reviews.html" class="dropdown-item">Reviews</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Heading -->
+    <h1 class="main-heading" data-aos="fade-down">Blogs of Czyrah's Pizza</h1>
+
+    <!-- Blog Cards -->
+    <section class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card">
+                    <img src="pizzacrust.jpg" class="card-img-top" alt="Perfect Pizza Crust">
+                    <div class="card-body">
+                        <h5 class="card-title">The Secret Behind Czyrah’s Signature Crust</h5>
+                        <div class="description">
+                            <p>A perfect pizza starts with the crust, and at Czyrah’s Pizza, we’ve mastered it! Our dough is made fresh daily, following a special recipe that gives it a crispy yet soft texture. Using high-quality local ingredients, we let the dough rest just right to achieve its signature taste. Each pizza is baked perfectly to bring out a delicious aroma, making every bite unforgettable. If you haven’t tried our handcrafted crust yet, you’re missing out!</p>
+                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card">
+                    <img src="pizzaburger.jpg" class="card-img-top" alt="Pizza Burger">
+                    <div class="card-body">
+                        <h5 class="card-title">Introducing the All-New Pizza Burger!</h5>
+                        <div class="description">
+                            <p>Czyrah’s Pizza just took two favorites—pizza and burgers—and combined them into one delicious masterpiece! The Pizza Burger features a flavorful beefy goodness topped with melted cheese, fresh bell peppers, and a special blend of spices, all served on our signature crispy-yet-chewy crust. It’s the perfect choice for burger lovers who also crave the cheesy, saucy goodness of pizza. And the best part? You can try it now for only ₱99! Don’t miss out—grab a slice today!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card">
+                    <img src="freshpizza.PNG" class="card-img-top" alt="Fresh Ingredients">
+                    <div class="card-body">
+                        <h5 class="card-title">How We Source Our Fresh Ingredients</h5>
+                        <div class="description">
+                            <p>At Czyrah’s Pizza, we believe that great pizza starts with the best ingredients. That’s why we use fresh fruits, fresh vegetables, real cheese, and good-quality meats to ensure top-notch flavor. We also support local farmers by sourcing herbs and vegetables directly from nearby suppliers. Every pizza we serve is made with passion and quality, giving you a slice of homegrown goodness in every bite.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="card">
+                    <img src="loyaltycard.png" class="card-img-top" alt="Loyalty Card">
+                    <div class="card-body">
+                        <h5 class="card-title">Introducing Czyrah’s Pizza Loyalty Card!</h5>
+                        <div class="description">
+                            <p>Good news for our pizza lovers! Czyrah’s Pizza is launching a Loyalty Rewards Program where you can earn free pizza just by enjoying your favorites. For every ₱70 spent, you get a stamp on your Czyrah’s Pizza Loyalty Card. Collect 5 stamps, and you’ll receive a FREE medium pizza of your choice! It’s our way of saying thank you for your continued support. Ask for your loyalty card on your next visit and start collecting rewards today!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer itu -->
+		<footer class="footer">
+			<div class="container">
+			  <div class="row">
+				<!-- The Contact Infos -->
+				<div class="col-md-4">
+				  <p>Have questions or feedback? Reach out to us!</p>
+				  <p><strong>Email:</strong> <a href="mailto:myrla.portales@gmail.com">myrla.portales@gmail.com</a></p>
+				  <p><strong>Phone:</strong> <a href="tel:+639187257143">+63 918-725-7143</a></p>
+				  <p><strong>Address:</strong> 48 Don Basilio Bautista Blvd, Malabon, 1470 Metro Manila, Philippines</p>
+				</div>
+		 
+				<!-- SocMeds -->
+				<div class="col-md-4">
+				  <div class="social-media">
+					<h3>Follow Us</h3>
+					<a href="https://www.instagram.com/czyrahspizza/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/czyrahhpizza" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.tiktok.com/@czyrahspizza_sct.borrome" target="_blank"><i class="fab fa-tiktok"></i></a>
+				  </div>
+				</div>
+		 
+				<!-- Privacy smth -->
+				<div class="col-md-4">
+				  <p>&copy; 2025 Czyrah's Pizza. All Rights Reserved.</p>
+				  <p>
+					<a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </footer>
+
+    <!-- Bootstrap & AOS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

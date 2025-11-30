@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czyrah's Pizza | FAQ</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <style>
+	@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+	
+        body {
+            background: #f7e8a3;
+            background-image: url("LayerPizzaLeft.png"), url("LayerPizzaRight.png");
+            background-position: 50px 11px, 920px 11px;
+            background-size: 300px, 300px, cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #3e2723;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .main-heading {
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            color: #d84315;
+            margin-top: 100px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .accordion .card {
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            transition: all 0.3s;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion .card-header {
+            background: #d84315;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .accordion .card-header:hover {
+            background: #bf360c;
+        }
+
+        .accordion .card-body {
+            background: #fff8e1;
+            color: #3e2723;
+        }
+		
+		form {
+		background-color: #f8f9fa;
+		padding: 20px;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		max-width: 600px;
+		margin-top: 20px;
+		margin: 0 auto;
+		}
+
+		form h3 {
+			color: #333;
+			font-size: 20px;
+			margin-bottom: 15px;
+			margin: 0 auto; /* Centers horizontally */
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center; 
+		}
+
+		textarea {
+			width: 100%;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 10px;
+			font-size: 16px;
+			resize: none;
+		}
+
+		textarea:focus {
+			border-color: #558957;
+			outline: none;
+			box-shadow: 0 0 5px rgba(85, 137, 87, 0.5);
+		}
+
+	.btn-custom {
+		background-color: #558957;
+		color: white;
+		border: none;
+		padding: 10px 20px;
+		font-size: 16px;
+		border-radius: 5px;
+		transition: background 0.3s ease-in-out;
+	}
+    .social-media {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .social-media a {
+        color: #C7A925;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 2rem;
+      }
+      .social-media a:hover {
+        color: #ffffff;
+      }
+      .footer {
+        background-color: #558957;
+        color: white;
+        padding: 40px 0;
+        margin-top: 40px;
+      }
+      .footer a {
+        color: #C7A925;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+      .footer strong {
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #558957;">
+    <div class="container">
+        <a href="index.html" class="navbar-brand mb-0 h1">
+            <img src="Logo.png" width="50px">
+            Czyrah's Pizza
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Final_AboutUs.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Final_Menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a href="Final_Terms.html" class="dropdown-item">Terms & Conditions</a></li>
+                        <li><a href="Final_FAQ.html" class="dropdown-item">FAQs</a></li>
+                        <li><a href="Final_Contact.html" class="dropdown-item">Contacts</a></li>
+                        <li><a href="Final_Blog.html" class="dropdown-item">Blogs</a></li>
+                        <li><a href="Final_Reviews.html" class="dropdown-item">Reviews</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div style="height: 56px;"></div>
+    
+    <h1 class="main-heading" data-aos="fade-down">FAQs of Czyrah's Pizza</h1>
+    
+	<br>
+  
+    <div class="container mt-4">
+    <div class="accordion" id="faqAccordion">
+        <!-- Item 1 -->
+        <div class="card" data-aos="fade-up">
+            <div class="card-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                1. What are our Store Hours?
+            </div>
+            <div id="collapseOne" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body">
+                    We are open every day from 07:00 AM - 09:00 PM. Check our website for updates on holidays!
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                2. Do we offer dine-in, takeout, and delivery?
+            </div>
+            <div id="collapseTwo" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body">
+                    Currently, we only have takeout and deliveries. Order online or pick up at our store.
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                3. I have an issue with my order, what do I do?
+            </div>
+            <div id="collapseThree" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body">
+                    Please contact us immediately at [+63 918-725-7143]. We will do our best to resolve it!
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                4. Can I schedule an order for later?
+            </div>
+            <div id="collapseFour" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body">
+                    Yes! You can schedule a pickup or delivery for a later time. Just specify it on our website.
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header" id="headingFive" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                5. Can I customize my pizza?
+            </div>
+            <div id="collapseFive" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body">
+                    Unfortunately, customization is not available. However, we offer a variety of delicious options to choose from!
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header" id="headingSix" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                6. Do we use fresh ingredients?
+            </div>
+            <div id="collapseSix" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body">
+                    Yes, our pizzas are made from fresh-high quality produce to create a delicious meal.
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header" id="headingSeven" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                7. Are there any special deals or discounts?
+            </div>
+            <div id="collapseSeven" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body">
+                    Yes! We have special deals and discounts during holidays and special occasions. Make sure to check our website for new ones.
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header" id="headingEight" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                8. Do we cater for events?
+            </div>
+            <div id="collapseEight" class="collapse" data-bs-parent="#faqAccordion">
+                <div class="card-body">
+                    Unfortunately, no. We are still a new and upcoming pizza store. Continue to support us so that we can expand our brand!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+	
+	<br>
+	
+	 <form data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-3">
+                <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Submit</button>
+        </form>
+    
+    <footer class="footer">
+			<div class="container">
+			  <div class="row">
+				<!-- The Contact Infos -->
+				<div class="col-md-4">
+				  <p>Have questions or feedback? Reach out to us!</p>
+				  <p><strong>Email:</strong> <a href="mailto:myrla.portales@gmail.com">myrla.portales@gmail.com</a></p>
+				  <p><strong>Phone:</strong> <a href="tel:+639187257143">+63 918-725-7143</a></p>
+				  <p><strong>Address:</strong> 48 Don Basilio Bautista Blvd, Malabon, 1470 Metro Manila, Philippines</p>
+				</div>
+		 
+				<!-- SocMeds -->
+				<div class="col-md-4">
+				  <div class="social-media">
+					<h3>Follow Us</h3>
+					<a href="https://www.instagram.com/czyrahspizza/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/czyrahhpizza" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://www.tiktok.com/@czyrahspizza_sct.borrome" target="_blank"><i class="fab fa-tiktok"></i></a>
+				  </div>
+				</div>
+		 
+				<!-- Privacy smth -->
+				<div class="col-md-4">
+				  <p>&copy; 2025 Czyrah's Pizza. All Rights Reserved.</p>
+				  <p>
+					<a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000 });
+    </script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
